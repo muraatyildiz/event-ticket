@@ -1,11 +1,20 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <top-bar-menu/> 
+  <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
+    <router-view/>
   </div>
-  <router-view/>
+  
+  <footer-menu/>
 </template>
-
+<script>
+import TopBarMenu from "./components/topBar.vue"
+import FooterMenu from "./components/footer.vue"
+export default {
+  components: {
+    TopBarMenu,
+    FooterMenu
+  }
+}</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
