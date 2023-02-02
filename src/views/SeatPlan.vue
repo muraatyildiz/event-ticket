@@ -17,7 +17,7 @@
         {{ seat.seat }} - {{ seat.row }}
       </div>
     </div>
-    <botton
+    <button
     class="
             inline-flex
             items-center
@@ -37,7 +37,7 @@
       @click="goToPayment()"
       
     >Koltuk Seçimini Tamamla
-</botton>
+</button>
   </div>
 </template>
   <script>

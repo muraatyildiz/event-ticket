@@ -26,7 +26,7 @@
       <a>
         <img class="rounded-t-lg" alt="item.title" :src="event.image_url" />
       </a>
-      <div class="p-5">
+      <div class="">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {{ event.description }}
         </p>
@@ -73,7 +73,7 @@
           </option>
         </select>
         </div>
-        <botton
+        <button
           @click="goToSeats()"
           class="
             inline-flex
@@ -104,7 +104,7 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-        </botton>
+        </button>
       </div>
     </div>
   </div>
